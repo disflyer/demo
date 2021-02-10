@@ -5,14 +5,13 @@ import axios from 'axios'
 
 export default function Home() {
   const { data } = useSWR('hello', async () => (await axios.get('/api/hello')).data)
-  console.debug(data)
   return (
     <div
       className={css`
         color: red;
       `}
     >
-      {data.name}
+      {data?.name}
     </div>
   )
 }
