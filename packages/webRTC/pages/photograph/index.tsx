@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef } from 'react'
 import { css } from 'linaria'
 import { Button } from 'antd'
+import { uploadFile } from '~/utils'
 
 export default function Page() {
   const videoRef = useRef<HTMLVideoElement>()
@@ -10,8 +11,11 @@ export default function Page() {
     const context = canvasRef.current.getContext('2d')
     const height = videoRef.current.videoHeight * (500 / videoRef.current.videoWidth)
     canvasRef.current.width = 500
-    canvasRef.current.height = videoRef.current.videoWidth
+    canvasRef.current.height = height
     context.drawImage(videoRef.current, 0, 0, 500, height)
+    canvasRef.current.toBlob((file) => {
+      uploadFile(file)
+    })
   }, [])
   useEffect(() => {
     navigator.mediaDevices
