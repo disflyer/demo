@@ -38,10 +38,7 @@ const Home = () => {
         padding: 40px;
       `}
     >
-      <ProgressItem>progress</ProgressItem>
-      <ProgressItem>progress</ProgressItem>
-      <ProgressItem>progress</ProgressItem>
-      <ProgressItem>progress</ProgressItem>
+      1
     </div>
   )
 }

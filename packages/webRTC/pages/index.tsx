@@ -1,17 +1,15 @@
 import React from 'react'
 import { css } from 'linaria'
-import useSWR from 'swr'
-import axios from 'axios'
 
 export default function Home() {
-  const { data } = useSWR('hello', async () => (await axios.get('/api/hello')).data)
   return (
     <div
       className={css`
         color: red;
       `}
+      id="appContainer"
     >
-      {data?.name}
+      请检查subapp服务是否打开
     </div>
   )
 }

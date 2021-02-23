@@ -98,15 +98,15 @@ module.exports = withCSS(
               APP_ENV: process.env.APP_ENV
             },
             esModule: true,
-            async redirects() {
-              return [
-                {
-                  source: '/',
-                  destination: '/home',
-                  permanent: false
-                }
-              ]
-            },
+            // async redirects() {
+            //   return [
+            //     {
+            //       source: '/',
+            //       destination: '/home',
+            //       permanent: false
+            //     }
+            //   ]
+            // },
             assetPrefix: '',
             inlineImageLimit: 1000,
             webpack(config, options) {
