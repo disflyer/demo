@@ -406,6 +406,16 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@ffmpeg/ffmpeg@^0.9.7":
+  version "0.9.7"
+  resolved "https://npm.midway.run/@ffmpeg%2fffmpeg/-/ffmpeg-0.9.7.tgz#f309d689c59e35d345c049bf5e35f1ccde28c215"
+  integrity sha1-8wnWicWeNdNFwEm/XjXxzN4owhU=
+  dependencies:
+    is-url "^1.2.4"
+    node-fetch "^2.6.1"
+    regenerator-runtime "^0.13.7"
+    resolve-url "^0.2.1"
+
 "@hapi/accept@5.0.1":
   version "5.0.1"
   resolved "https://npm.midway.run/@hapi%2faccept/-/accept-5.0.1.tgz#068553e867f0f63225a506ed74e899441af53e10"
@@ -3531,6 +3541,11 @@ is-symbol@^1.0.2:
   dependencies:
     has-symbols "^1.0.1"
 
+is-url@^1.2.4:
+  version "1.2.4"
+  resolved "https://npm.midway.run/is-url/-/is-url-1.2.4.tgz#04a4df46d28c4cff3d73d01ff06abeb318a1aa52"
+  integrity sha1-BKTfRtKMTP89c9Af8Gq+sxihqlI=
+
 is-windows@^1.0.2:
   version "1.0.2"
   resolved "https://npm.midway.run/is-windows/-/is-windows-1.0.2.tgz#d1850eb9791ecd18e6182ce12a30f396634bb19d"
@@ -4214,7 +4229,7 @@ node-addon-api@^3.0.2:
   resolved "https://npm.midway.run/node-addon-api/-/node-addon-api-3.1.0.tgz#98b21931557466c6729e51cb77cd39c965f42239"
   integrity sha1-mLIZMVV0ZsZynlHLd805yWX0Ijk=
 
-node-fetch@2.6.1:
+node-fetch@2.6.1, node-fetch@^2.6.1:
   version "2.6.1"
   resolved "https://npm.midway.run/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha1-BFvTI2Mfdu0uK1VXM5RBa2OaAFI=
@@ -5777,7 +5792,7 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
-regenerator-runtime@^0.13.4:
+regenerator-runtime@^0.13.4, regenerator-runtime@^0.13.7:
   version "0.13.7"
   resolved "https://npm.midway.run/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
   integrity sha1-ysLazIoepnX+qrrriugziYrkb1U=

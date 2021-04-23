@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .ts,.tsx --fix"
   },
   "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.9.7",
     "antd": "^4.12.3",
     "axios": "^0.21.1",
     "file-loader": "^6.2.0",
