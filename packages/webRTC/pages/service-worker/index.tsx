@@ -37,6 +37,13 @@ export default function Home() {
     >
       <div
         className={css`
+          margin-bottom: 20px;
+        `}
+      >
+        两种不同的方式计算第20个斐波那契数
+      </div>
+      <div
+        className={css`
           display: flex;
           justify-content: space-between;
           width: 200px;

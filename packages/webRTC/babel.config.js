@@ -8,9 +8,9 @@ module.exports = function override(api) {
     // 'babel-plugin-macros'
   ]
 
-  if (isProd) {
-    plugins.push(['transform-remove-console', { exclude: ['error', 'warn'] }])
-  }
+  // if (isProd) {
+  //   plugins.push(['transform-remove-console', { exclude: ['error', 'warn'] }])
+  // }
 
   return {
     presets: [
