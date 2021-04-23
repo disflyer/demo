@@ -1,5 +1,4 @@
 import '../styles/globals.ts'
-import React from 'react'
 // import { register } from '../config/subapp'
 // import { globalsCSS } from '~/styles/globals'
 // import { SideBar } from '~/components/SideBar'

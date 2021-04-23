@@ -31,7 +31,8 @@ rules:
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': ['off'],
-    'no-labels': 0
+    'no-labels': 0,
+    'react/react-in-jsx-scope': 'off'
   }
 ignorePatterns: ['dist/', 'lib/']
 settings:

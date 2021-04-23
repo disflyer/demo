@@ -1,16 +1,11 @@
-import React, { useEffect } from 'react'
 import { css } from 'linaria'
 import { Button, Card } from 'antd'
 import Link from 'next/link'
-import { getProvision } from '~/utils'
 
 const card = css`
   min-width: 250px;
 `
 export default function Home() {
-  useEffect(() => {
-    getProvision().then(console.log)
-  }, [])
   return (
     <div
       className={css`
@@ -26,6 +21,20 @@ export default function Home() {
         <div>
           <Card hoverable className={card}>
             <Button type="link">拍照</Button>
+          </Card>
+        </div>
+      </Link>
+      <Link href="/transcode">
+        <div>
+          <Card hoverable className={card}>
+            <Button type="link">音频转换</Button>
+          </Card>
+        </div>
+      </Link>
+      <Link href="/service-worker">
+        <div>
+          <Card hoverable className={card}>
+            <Button type="link">service worker</Button>
           </Card>
         </div>
       </Link>

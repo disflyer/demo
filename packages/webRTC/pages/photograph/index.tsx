@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import { css } from 'linaria'
 import { Button } from 'antd'
 import { uploadFile } from '~/utils'
