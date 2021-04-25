@@ -1,6 +1,6 @@
 const CACHE_NAME = 'test_cache'
 
-const filesToCache = ['/test.wasm']
+const filesToCache = ['/test.wasm', 'https://unpkg.com/@ffmpeg/core@0.8.5/dist/ffmpeg-core.wasm']
 
 self.addEventListener('install', (e) => {
   e.waitUntil(

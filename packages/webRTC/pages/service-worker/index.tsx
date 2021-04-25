@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { css } from 'linaria'
 import { Button } from 'antd'
 import { fetchAndInstantiate } from '~/utils'
@@ -12,18 +11,6 @@ const FIB = (number) => {
 }
 
 export default function Home() {
-  useEffect(() => {
-    if (navigator.serviceWorker) {
-      window.navigator.serviceWorker
-        .register('/sw.worker.js', { scope: '/service-worker' })
-        .then((reg) => {
-          console.debug('注册成功', reg)
-        })
-        .catch((error) => {
-          console.debug('注册失败', error)
-        })
-    }
-  }, [])
   return (
     <div
       className={css`
