@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef } from 'react'
-import { css } from 'linaria'
+import { css } from '@linaria/core'
 import { Button } from 'antd'
 import { uploadFile } from '~/utils'
 

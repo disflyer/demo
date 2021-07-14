@@ -14,7 +14,7 @@ import {
 } from '@ant-design/icons'
 
 // import { useAccess, useLocation } from 'umi'
-import { css } from 'linaria'
+import { css } from '@linaria/core'
 
 type Item = {
   name: string
