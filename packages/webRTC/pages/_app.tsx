@@ -3,7 +3,7 @@ import '../styles/globals.ts'
 // import { globalsCSS } from '~/styles/globals'
 // import { SideBar } from '~/components/SideBar'
 import 'antd/dist/antd.css'
-import { css } from 'linaria'
+import { css } from '@linaria/core'
 import { useEffect } from 'react'
 
 // register()

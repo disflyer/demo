@@ -4,13 +4,13 @@ module.exports = function override(api) {
 
   const plugins = [
     // '@babel/plugin-transform-typescript',
-    // '@babel/plugin-proposal-optional-chaining',
+    // '@babel/plugin-proposal-optional-chaining'
     // 'babel-plugin-macros'
   ]
 
-  // if (isProd) {
-  //   plugins.push(['transform-remove-console', { exclude: ['error', 'warn'] }])
-  // }
+  if (isProd) {
+    plugins.push(['transform-remove-console', { exclude: ['error', 'warn'] }])
+  }
 
   return {
     presets: [
@@ -24,7 +24,7 @@ module.exports = function override(api) {
           'class-properties': {}
         }
       ],
-      'linaria/babel'
+      '@linaria'
     ],
     plugins
   }

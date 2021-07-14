@@ -1,4 +1,4 @@
-import { css } from 'linaria'
+import { css } from '@linaria/core'
 import { Button, Card } from 'antd'
 import Link from 'next/link'
 
@@ -35,6 +35,13 @@ export default function Home() {
         <div>
           <Card hoverable className={card}>
             <Button type="link">service worker</Button>
+          </Card>
+        </div>
+      </Link>
+      <Link href="/webgl">
+        <div>
+          <Card hoverable className={card}>
+            <Button type="link">webgl</Button>
           </Card>
         </div>
       </Link>

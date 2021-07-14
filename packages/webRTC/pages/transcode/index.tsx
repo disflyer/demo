@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { css } from 'linaria'
+import { css } from '@linaria/core'
 import { Button, message, Upload } from 'antd'
 import { transcode } from '~/utils'
 export default function Home() {
