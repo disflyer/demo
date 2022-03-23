@@ -20,14 +20,14 @@ export default function Home() {
       <Link href="/photograph">
         <div>
           <Card hoverable className={card}>
-            <Button type="link">拍照</Button>
+            <Button type="link">photo</Button>
           </Card>
         </div>
       </Link>
       <Link href="/transcode">
         <div>
           <Card hoverable className={card}>
-            <Button type="link">音频转换</Button>
+            <Button type="link">audio transcode</Button>
           </Card>
         </div>
       </Link>
