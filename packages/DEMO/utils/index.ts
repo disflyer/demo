@@ -22,7 +22,7 @@ export const uploadFile = async (file: Blob) => {
     throw err
   }
 }
-export const transcode = async (file) => {
+export const transcode2MP3 = async (file) => {
   const { name } = file
   if (!ffmpeg.isLoaded()) {
     await ffmpeg.load()
@@ -31,6 +31,18 @@ export const transcode = async (file) => {
   await ffmpeg.run('-i', encodeURIComponent(name), 'output.mp3')
   const data = ffmpeg.FS('readFile', `output.mp3`)
   const newFile = new Blob([data.buffer], { type: 'audio/mp3' })
+  return newFile
+}
+
+export const transcode2GIF = async (file) => {
+  const { name } = file
+  if (!ffmpeg.isLoaded()) {
+    await ffmpeg.load()
+  }
+  ffmpeg.FS('writeFile', encodeURIComponent(name), await fetchFile(file))
+  await ffmpeg.run('-i', encodeURIComponent(name), 'output.gif')
+  const data = ffmpeg.FS('readFile', `output.gif`)
+  const newFile = new Blob([data.buffer], { type: 'video/gif' })
   return newFile
 }
 

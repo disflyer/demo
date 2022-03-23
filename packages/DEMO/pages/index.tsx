@@ -31,6 +31,13 @@ export default function Home() {
           </Card>
         </div>
       </Link>
+      <Link href="/generate-gif">
+        <div>
+          <Card hoverable className={card}>
+            <Button type="link">generate gif</Button>
+          </Card>
+        </div>
+      </Link>
       <Link href="/service-worker">
         <div>
           <Card hoverable className={card}>
